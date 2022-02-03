@@ -4,7 +4,7 @@ const path = require('path')
 module.exports = {
   title: 'Redis Developer Hub',
   tagline: 'The Home of Redis Developers',
-  url: 'https://developer.redis.com',
+  url: 'https://docusaurus-2.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
