@@ -9,7 +9,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'redis-developer', // Usually your GitHub org/user name.
+  organizationName: 'rainaajeet', // Usually your GitHub org/user name.
   projectName: 'redis-developer', // Usually your repo name.
   customFields: {
     authors: {
