@@ -282,7 +282,15 @@ module.exports = {
           'explore/redisinsight/usinghelm/index-usinghelm',
         ]
         },
-         'explore/redisdatasource/index-redisdatasource',
+          {
+           type: 'category',
+           label: 'Netlify',
+           items: [
+            'explore/netlify/getting-started-with-netlify/index-getting-started-with-netlify',
+            'explore/netlify/deploy-redis-developersite-clone/index-deploy-redis-developersite-clone',
+              ]
+            },
+          'explore/redisdatasource/index-redisdatasource',
           'explore/redisexplorer/index-redisexplorer',
           'explore/datadog/index-datadog',
           'explore/redismod/index-redismod',
