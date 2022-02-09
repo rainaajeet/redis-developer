@@ -65,9 +65,9 @@ function Hero() {
                   <SvgExplore color="#FFFFFF" />
                 </span>
                 <div className="text">
-                  <h3 className="title">Explore</h3>
-                  <p className="description">Insert, update, and explore your database using RedisInsight</p>
-                  <span className="more">Explore your data <SvgArrowRight color="#DC382C" /></span>
+                  <h3 className="title">Operate</h3>
+                  <p className="description">Provision,automate and accelerate your Redis deployment using DevOps tools</p>
+                  <span className="more">Operate your Redis database <SvgArrowRight color="#DC382C" /></span>
                 </div>
                 <a href={useBaseUrl('/explore/redisinsight/')} className="link">Read More</a>
               </div>
