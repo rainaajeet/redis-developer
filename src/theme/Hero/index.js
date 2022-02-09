@@ -66,8 +66,8 @@ function Hero() {
                 </span>
                 <div className="text">
                   <h3 className="title">Operate</h3>
-                  <p className="description">Provision,automate and accelerate your Redis deployment using DevOps tools</p>
-                  <span className="more">Operate your Redis database <SvgArrowRight color="#DC382C" /></span>
+                  <p className="description">Provision and accelerate Redis deployment using DevOps tools</p>
+                  <span className="more">Operate your database <SvgArrowRight color="#DC382C" /></span>
                 </div>
                 <a href={useBaseUrl('/explore/redisinsight/')} className="link">Read More</a>
               </div>
