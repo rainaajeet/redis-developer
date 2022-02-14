@@ -247,6 +247,42 @@ module.exports = {
      ]
     },
     {
+     type: 'category',
+     label: 'Operate',
+     items: [
+      'operate/index-operate',
+     {
+       type: 'category',
+       label: 'Continuous Integration/Deployment',
+       items: [
+        'operate/ci-cd/jenkins/index-jenkins'
+        ]
+      },
+      {
+       type: 'category',
+       label: 'Observability',
+       items: [
+        'operate/observability/redisdatasource/index-redisdatasource',
+        'operate/observability/redisexplorer/index-redisexplorer',
+        'operate/observability/datadog/index-datadog',
+        'operate/observability/prometheus/index-prometheus',   
+        ]
+      },
+      { 
+        type: 'category',
+        label: 'Provisioning',
+        items: [
+          'operate/provisioning/terraform/index-terraform',
+          'operate/provisioning/azure-cache-terraform/index-azure-cache-terraform',
+          'operate/provisioning/azure-cache-terraform-private/index-azure-cache-terraform-private',
+          ]
+       },
+
+      'operate/orchestration/index-orchestration',
+      ]
+
+    },
+    {
       type: 'category',
       label: 'Explore',
       items: [
