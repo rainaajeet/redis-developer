@@ -255,13 +255,15 @@ module.exports = {
        type: 'category',
        label: 'Continuous Integration/Deployment',
        items: [
-        'operate/ci-cd/jenkins/index-jenkins'
+         'operate/ci-cd/index-ci-cd',
+         'operate/ci-cd/jenkins/index-jenkins'
         ]
       },
       {
        type: 'category',
        label: 'Observability',
        items: [
+        'operate/observability/index-observability',
         'operate/observability/redisdatasource/index-redisdatasource',
         'operate/observability/redisexplorer/index-redisexplorer',
         'operate/observability/datadog/index-datadog',
@@ -272,6 +274,7 @@ module.exports = {
         type: 'category',
         label: 'Provisioning',
         items: [
+          'operate/provisioning/index-provisioning',
           'operate/provisioning/terraform/index-terraform',
           'operate/provisioning/azure-cache-terraform/index-azure-cache-terraform',
           'operate/provisioning/azure-cache-terraform-private/index-azure-cache-terraform-private',
