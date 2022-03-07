@@ -65,12 +65,27 @@ function Hero() {
                   <SvgExplore color="#FFFFFF" />
                 </span>
                 <div className="text">
+                  <h3 className="title">Explore</h3>
+                  <p className="description">Insert,update and explore your database using RedisInsight </p>
+                  <span className="more">Explore your data<SvgArrowRight color="#DC382C" /></span>
+                </div>
+                <a href={useBaseUrl('/operate/')} className="link">Read More</a>
+              </div>
+
+              <div className="box box-operate">
+                <SvgExploreBg color="#FFFFFF" className="bg" />
+                <span className="icon">
+                  <SvgExplore color="#FFFFFF" />
+                </span>
+                <div className="text">
                   <h3 className="title">Operate</h3>
-                  <p className="description">Provision and accelerate application deployment using DevOps </p>
+                  <p className="description">Provision and accelerate app deployment using DevOps </p>
                   <span className="more">Operate your database<SvgArrowRight color="#DC382C" /></span>
                 </div>
                 <a href={useBaseUrl('/operate/')} className="link">Read More</a>
               </div>
+
+
             </div>
           </div>
 
