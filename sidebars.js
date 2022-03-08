@@ -280,8 +280,15 @@ module.exports = {
           'operate/provisioning/azure-cache-terraform-private/index-azure-cache-terraform-private',
           ]
        },
-
-      'operate/orchestration/index-orchestration',
+      {
+        type: 'category',
+        label: 'Orchestration',
+        items: [
+          'operate/orchestration/index-orchestration',
+          'operate/orchestration/docker/index-docker',
+          'operate/orchestration/kubernetes/index-kubernetes',
+        ]
+       },
       ]
 
     },
