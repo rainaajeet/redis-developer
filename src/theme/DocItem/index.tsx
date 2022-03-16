@@ -14,7 +14,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import DocPaginator from '@theme/DocPaginator';
 import DocVersionSuggestions from '@theme/DocVersionSuggestions';
 import type {Props} from '@theme/DocItem';
-import TOC from '@theme/TOC';
 import IconEdit from '@theme/IconEdit';
 
 import clsx from 'clsx';
@@ -178,11 +177,6 @@ function DocItem(props: Props): JSX.Element {
             )}
           </div>
         </div>
-        {!hideTableOfContents && DocContent.toc && (
-          <div className="col col--3">
-            <TOC toc={DocContent.toc} />
-          </div>
-        )}
       </div>
     </>
   );
