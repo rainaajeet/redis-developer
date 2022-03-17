@@ -231,10 +231,6 @@
   .illustration {
     max-width: 100%;
 
-    @include desktop {
-      margin-left: 66px;
-    }
-
     @media only screen and (min-width: 997px) and (max-width: 1100px) {
       float: right;
       margin-left: 0;
