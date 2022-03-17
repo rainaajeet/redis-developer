@@ -68,7 +68,7 @@ function Languages() {
 
 
         <li>
-        <a href={useBaseUrl('/develop/mac/')}>
+        <a href={useBaseUrl('/create/homebrew/')}>
             <SvgApple />
             <span className="btn">Mac</span>
           </a>
