@@ -1,104 +1,60 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-import Typed from 'react-typed';
+import SvgDots from '@site/src/svg/Dots';
 
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+function Demos() {
+  return <section className="rds-demos">
+    <div className="container">
 
-import SvgHero from '@site/src/svg/Hero';
-import SvgCreate from '@site/src/svg/Create';
-import SvgCreateBg from '@site/src/svg/CreateBg';
-import SvgDevelop from '@site/src/svg/Develop';
-import SvgDevelopBg from '@site/src/svg/DevelopBg';
-import SvgExplore from '@site/src/svg/Explore';
-import SvgOperate from '@site/src/svg/Operate';
-import SvgExploreBg from '@site/src/svg/ExploreBg';
-import SvgArrowRight from '@site/src/svg/ArrowRight';
+      <h2 className="section-title"><br /> </h2>
 
-function Hero() {
-	return (
-    <header className="rds-hero">
-      <div className="container">
-        <div className="row">
+      <div className="row terminals">
+        <img src={useBaseUrl('/img/code-1.png')} className="code" alt="Background image of sample redis code" />
 
-          <div className="col col--12">
-            <div className="row">
-              <div className="col col--8">
-                <h1 className="hero-title">The Home of<br /> Redis Developers</h1>
+        <div className="col col--6">
 
-                <h2 className="hero-subtitle">
-                  <Typed
-                    strings={['>_ Made by developers for developers']}
-                    typeSpeed={75}
-                  >
-                  </Typed>
-                </h2>
-              </div>
-              <div className="col col--4">
-                <SvgHero color="#FFFFFF" className="illustration" />
-              </div>
+          <div className="terminal left">
+            <div className="terminal-header">
+              <SvgDots />
             </div>
-            <div className="boxes">
-              <div className="box box-create">
-                <SvgCreateBg color="#FFFFFF" className="bg" />
-                <span className="icon">
-                  <SvgCreate color="#FFFFFF" />
-                </span>
-                <div className="text">
-                  <h3 className="title">Create</h3>
-                  <p className="description">Create a new database using cloud, Docker or from sources</p>
-                  <span className="more">Create a database <SvgArrowRight color="#DC382C" /></span>
-                </div>
-                <a href={useBaseUrl('/create/rediscloud')} className="link">Read More</a>
-              </div>
-
-              <div className="box box-develop">
-                <SvgDevelopBg color="#FFFFFF" className="bg" />
-                <span className="icon">
-                  <SvgDevelop color="#FFFFFF" />
-                </span>
-                <div className="text">
-                  <h3 className="title">Develop</h3>
-                  <p className="description">Develop your application using your favorite language</p>
-                  <span className="more">Code your application <SvgArrowRight color="#DC382C" /></span>
-                </div>
-                <a href={useBaseUrl('/develop/')} className="link">Read More</a>
-              </div>
-
-              <div className="box box-explore">
-                <SvgExploreBg color="#FFFFFF" className="bg" />
-                <span className="icon">
-                  <SvgExplore color="#FFFFFF" />
-                </span>
-                <div className="text">
-                  <h3 className="title">Explore</h3>
-                  <p className="description">Insert,update and explore your database using RedisInsight </p>
-                  <span className="more">Explore your data<SvgArrowRight color="#DC382C" /></span>
-                </div>
-                <a href={useBaseUrl('/explore/')} className="link">Read More</a>
-              </div>
-
-              <div className="box box-operate">
-                <SvgExploreBg color="#FFFFFF" className="bg" />
-                <span className="icon">
-                  <SvgOperate />
-                </span>
-                <div className="text">
-                  <h3 className="title">Operate</h3>
-                  <p className="description">Provision Redis and accelerate app deployment using DevOps </p>
-                  <span className="more">Operate your database<SvgArrowRight color="#DC382C" /></span>
-                </div>
-                <a href={useBaseUrl('/operate/')} className="link">Read More</a>
-              </div>
-
-
+            <div className="terminal-body">
+              <h5 className="title">Getting started with Redis Stack</h5>
+              <ul className="links">
+                <li><a href="/create/redis-stack/">Introduction to Redis Stack</a></li>
+                <li><a href="/create/rediscloud">Create Redis Stack database on Redis Enterprise Cloud</a></li>
+                <li><a href="/create/redisjson">Storing and querying JSON documents</a></li> 
+                <li><a href="/howtos/redisearch/">Full-text search</a></li>
+                <li><a href="/howtos/redistimeseries/">Storing and Querying Time Series data</a></li>
+                <li><a href="/howtos/redisbloom/">Probability data structure</a></li>
+             </ul>
             </div>
           </div>
+
+        </div>
+        <div className="col col--6">
+
+          <div className="terminal right">
+            <div className="terminal-header">
+              <SvgDots />
+            </div>
+            <div className="terminal-body">
+              <h5 className="title">Featured how-tos & tutorials</h5>
+              <ul className="links">
+                <li><a href="/howtos/shoppingcart/">How to build a Shopping Cart app Using NodeJS & RedisJSON</a></li>
+                <li><a href="/howtos/ratelimiting/">How to build a Rate Limiter Using Redis & Python</a></li>
+                <li><a href="/howtos/moviesdatabase/getting-started/">How to build a Movies Database app Using RediSearch</a></li>
+                <li><a href="/howtos/leaderboard/">How to build a Real-Time Leaderboard app Using Redis</a></li>
+                <li><a href="/howtos/caching/">How to cache REST API responses Using Redis & NodeJS</a></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
-    </header>
-	);
+
+    </div>
+  </section>;
 }
- 
-export default Hero;
+
+export default Demos;

@@ -16,34 +16,27 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Redis Stack is an extension of Redis that adds modern data models and processing engines to provide a complete developer experience.Redis Stack provides a simple and seamless way to access different data models such as full-text search, document store, graph, time series, and probabilistic data structures enabling developers to build any real-time data application. 
 
-Further enhancing the developer experience, Redis Stack also includes an improved set of client and object mapping libraries that help developers get productive with just a few lines of code. Redis Stack which is based on the world’s most loved and most used database, open-source Redis, enables developers to use the core Redis data structures, together with modern data models and advanced processing engines bundled with our visualization tool, RedisInsight, in a two-click-to-deploy experience. 
 
-Redis Stack bundles five Redis modules: 
-- RedisJSON, 
-- RedisSearch, 
-- RedisGraph, 
-- RedisTimeSeries, and 
-- RedisBloom
+### Redis OSS Vs Redis Stack
 
+In addition to all of the features of OSS Redis, Redis stack supports:
 
-### What features does it support?
-
-Redis Stack is **unique** in the market by combining open-source Redis Core with source available modern data modules with the added benefit of advanced data visualization via RedisInsight that is easy to deploy and includes object mapping libraries for major application frameworks (Spring, ASP.NET Core, FastAPI, Express).  In one integrated solution, this gives the developer a no-cost way to
+- Queryable JSON documents
+- Full-text search
+- Time series data (ingestion & querying)
+- Graph data models with the Cypher query language
+- Probabilistic data structures
 
 
-1. Index and query Redis data, run aggregations, perform a full-text search 
-2. Run advanced vector similarity searches
-3. Store and manipulate nested JSON documents efficiently
-4. Build and model relations as graphs
-5. Store, query, and aggregate time-series data
-6. Take advantage of fast, space, and compute efficient probabilistic data structures 
-7. Easily visualize, debug, and analyze Redis data using RedisInsight
-8. Compatible client libraries
-9. Object mapping libraries
+### Redis Stack License
 
-### Which client libraries does it support?
+Redis Stack is made up of several components, licensed as follows:
 
-Redis Stack is built on Redis and uses the same client protocol as Redis. As a result, most Redis client libraries work with Redis Stack. But some client libraries provide a more complete developer experience.
+- Redis Stack Server combines open source Redis with RediSearch, RedisJSON RedisGraph, RedisTimeSeries and RedisBloom is licensed under the Redis Source Available License (RSAL).
+- RedisInsight is licensed under the Server Side Public License (SSPL).
+
+
+### Which client libraries support Redis Stack?
 
 Redis Stack supports various client libraries. The following core client libraries support Redis Stack:
 
@@ -58,20 +51,6 @@ The Redis OM client libraries let you use the document modeling, indexing, and q
 - [Redis OM Python](https://github.com/redis/redis-om-python)
 - [Redis OM Spring](https://github.com/redis/redis-om-spring)
 
-
-### Software Availability
-
-Redis Stack is a source-available database that helps developers build any real-time data application by providing a simple way to access different data models such as full-text search, document store, graph, time series, and probabilistic data structures. It includes an improved set of client and object mapping libraries that get developers productive with just a few lines of code  It also includes RedisInsight, a GUI for database visualization and data management.  Redis Stack is available however you want it: download from [Redis.io](http://redis.io/download),  [build from source](https://github.com/redis/redis-stack),  as a downloadable [docker image](https://hub.docker.com/r/redis/redisstack), as a Redis managed service in the cloud, or as Redis Enterprise software for self-managed on-premises
-
-### What does Redis Stack consist of?
-
-![components of redis stack](images/redisstack.png)
-
-Redis Stack extends open-source Redis core with modern data models (Document, Graph, Time Series) and data processing engines (Search, and Server-Side Functions). Redis Stack is a bundle of Redis Core plus RediSearch, RedisJSON, RedisTimeSeries, RedisBloom, and RedisGraph.  Redis Stack also includes RedisInsight, a visualization tool. 
-
-Redis Stack provides the best possible developer experience by providing a simple and seamless way to access different data models such as full-text search, document store, graph, time series, and probabilistic data structures enabling developers to build any real-time data application. 
-
-Further enhancing the developer experience, Redis Stack also includes an improved set of client and object mapping libraries that help developers get productive with just a few lines of code. Redis Stack which is based on the world’s most loved and most used database, open-source Redis, enables developers to use the core Redis data structures, together with modern data models and advanced processing engines bundled with our visualization tool, RedisInsight, in a two-click-to-deploy experience.
 
 ### Getting Started
 
