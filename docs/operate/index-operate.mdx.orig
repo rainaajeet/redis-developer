@@ -1,6 +1,6 @@
 ---
 id: index-operate
-title: Operate Your Redis database
+title: Operating Your Redis Database
 sidebar_label: Overview
 slug: /operate
 ---
@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import RedisCard from '@site/src/theme/RedisCard';
 
-The following links provides you with the available options to operate your Redis database using DevOps tools.
+The following links provide information about how to operate your Redis database using DevOps tools.
 
 
 <div class="row text--left">
@@ -17,7 +17,7 @@ The following links provides you with the available options to operate your Redi
 <div class="col ">
 <div className="ri-container">
 
-## Top 5 Reasons why DevOps Team Love Redis Enterprise
+## Top 5 Reasons why DevOps Teams Love Redis Enterprise
 [---> Read the blog](https://redis.com/blog/why-devops-teams-love-redis-enterprise/) 
 </div>
 </div>

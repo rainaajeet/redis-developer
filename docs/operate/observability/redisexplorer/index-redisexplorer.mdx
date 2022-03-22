@@ -1,6 +1,6 @@
 ---
 id: index-redisexplorer
-title: How to create Grafana Dashboards for Redis Enterprise cluster  in 5 Minutes
+title: How to create Grafana Dashboards for Redis Enterprise cluster in 5 Minutes
 sidebar_label: Grafana Dashboards for Redis Enterprise Cluster 
 slug: /operate/observability/redisexplorer
 authors: [ajeet]
@@ -13,46 +13,46 @@ import RedisCard from '@site/src/theme/RedisCard';
 
 
 
-Redis Enterprise clusters are a set of nodes, typically two or more, providing database services. Clusters are inherently multi-tenant, and a single cluster can manage multiple databases accessed through individual endpoints. Redis Enterprise software provides REST API to retrieve information about cluster, database , nodes and metrics.
+Redis Enterprise clusters are a set of nodes, typically two or more, providing database services. Clusters are inherently multi-tenant, and a single cluster can manage multiple databases accessed through individual endpoints. Redis Enterprise software provides REST API to retrieve information about cluster, database, nodes and metrics.
 
-Redis Explorer plugin is the latest plugin in the Grafana Labs that adds support for Redis Enterprise software.It is a plugin for Grafana that connects to Redis Enterprise software clusters using REST API. It provides application pages to add Redis Data Sources for managed databases and dashboards to see cluster configuration.
+Redis Explorer plugin is the latest plugin in the Grafana Labs that adds support for Redis Enterprise software. It is a plugin for Grafana that connects to Redis Enterprise software clusters using REST API. It provides application pages to add Redis Data Sources for managed databases and dashboards to see cluster configuration.
 
 
-![my image](redisexplorer.png)
+![The Redis Explorer plugin](redisexplorer.png)
 
-Redis Explorer allows you to create the below dashboard over Grafana:
+Redis Explorer allows you to create the following dashboard over Grafana:
 
 #### Enterprise Clusters Dashboard 
 
-Enterprise Clusters dashboard provides basic information about the cluster, license, and displays most important metrics.
+The Enterprise Clusters dashboard provides basic information about the cluster, license, and displays most important metrics.
 
-![Image](enterprise_cluster_dashboard.png)
+![Enterprise Cluster Dashboard](enterprise_cluster_dashboard.png)
 
 
 #### Cluster Overview Dashboard
 
-Cluster Overview dashboard provides the most important information and metrics for the selected cluster.
+The Cluster Overview dashboard provides the most important information and metrics for the selected cluster.
 
-![Image](cluster_overview_dashboard.png)
+![The Cluster Overview Dashboard](cluster_overview_dashboard.png)
 
 
 #### Cluster Nodes Dashboard
 
 Cluster Nodes dashboard provides information and metrics for each node participating in the cluster.
 
-![Image](cluster_nodes_dashboard.png)
+![The Cluster Nodes dashboard](cluster_nodes_dashboard.png)
 
 
 
 #### Cluster Databases Dashboard
 
-Cluster Databases dashboard provides information and metrics for each databases managed by cluster.
+The Cluster Databases dashboard provides information and metrics for each databases managed by cluster.
 
-![Image](cluster_databases_dashboard.png)
+![The Cluster databases dashboard](cluster_databases_dashboard.png)
 
 ### Getting Started
 
-### Pre-requisite
+### Pre-requisites
 
 - Grafana 8.0+ is required for Redis Explorer 2.X.
 - Grafana 7.1+ is required for Redis Explorer 1.X.
@@ -61,11 +61,11 @@ Cluster Databases dashboard provides information and metrics for each databases 
 
 ### Step 1. Setup Redis Enterprise Cluster
 
-[Follow these steps](/create/docker/) to setup Redis Enterprise cluster nodes
+[Follow these steps](/create/docker/) to setup Redis Enterprise cluster nodes.
 
-![My Image](tryfree1.png)
+![Set up Redis Enterprise](tryfree1.png)
 
-![My Image](redis_enterprise_cluster.png)
+![Redis Enterprise Cluster](redis_enterprise_cluster.png)
 
 ### Step 2. Install Grafana
 
@@ -88,33 +88,33 @@ Redis Application plugin and Redis Data Source will be auto-installed as depende
 
 ### Step 4. Using Docker 
 
-You can even run Redis Explorer plugin using Docker
+You can even run Redis Explorer plugin using Docker:
 
  ```bash
   docker run -p 3000:3000 --name=grafana -e "GF_INSTALL_PLUGINS=redis-explorer-app" grafana/grafana
  ```
 
-Open https://IP:3000 to access grafana. The default username/password is admin/admin.
+Open `https://IP:3000` to access grafana. The default username/password is admin/admin.
 
 
 ### Step 5. Log in to Grafana
 
-![My Image](grafana.png)
+![Logging into Grafana](grafana.png)
 
 
 ### Step 6. Choose Redis Explorer in the sidebar
 
-Once you add the datasource, you should be able to choose the right option
+Once you add the datasource, you should be able to choose the right option:
 
-![My Image](explorer_options.png)
+![Explorer Options](explorer_options.png)
 
 ### Step 7. Getting the Redis Enterprise Cluster Overview
 
-![My Image](cluster_overview.png)
+![Redis Enterprise Cluster Overview](cluster_overview.png)
 
 ### Step 8. Displaying the Redis Enterprise Cluster Nodes
 
-![My Image](cluster_nodes.png)
+![Redis Enterprise Cluster Nodes](cluster_nodes.png)
 
 
 

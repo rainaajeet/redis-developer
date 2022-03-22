@@ -4,12 +4,12 @@ const path = require('path')
 module.exports = {
   title: 'Redis Developer Hub',
   tagline: 'The Home of Redis Developers',
-  url: 'https://docusaurus-v2.netlify.app',
+  url: 'https://developer.redis.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'rainaajeet', // Usually your GitHub org/user name.
+  organizationName: 'redis-developer', // Usually your GitHub org/user name.
   projectName: 'redis-developer', // Usually your repo name.
   customFields: {
     authors: {
@@ -31,12 +31,30 @@ module.exports = {
         title: 'Developer Growth Manager at Redis',
         image: 'profile_pic_ajeet_raina.jpg'
       },
+      talon: {
+        name: 'Talon Miller',
+        link: 'https://www.linkedin.com/in/talon-miller-005054109/',
+        title: 'Technical Product Marketing Manager at Redis',
+        image: 'profile_pic_talon_miller.jpg'
+      },
+      alex: {
+        name: 'Alex Mikhalev',
+        link: 'https://www.linkedin.com/in/alexmikhalev',
+        title: 'AI/ML Architect at Nationwide Building Society',
+        image: 'profile_pic_alex_mikhalev.jpg'
+      },
       will: {
         name: 'Will Johnston',
         link: 'https://twitter.com/wjohnsto',
         title: 'Developer Growth Manager at Redis',
         image: 'profile_pic_will_johnston.jpg'
       },
+      ryan: {
+        name: 'Ryan Gray',
+        link: 'https://www.linkedin.com/in/ryan-t-gray/',
+        title: 'Technical Consultant at Portainer.io',
+        image: 'profile_pic_ryan_gray.jpg'
+     },
       rahul: {
         name: 'Rahul Chauhan',
         link: 'https://www.linkedin.com/in/rchauhan2/',
@@ -104,13 +122,13 @@ module.exports = {
         image: 'profile_pic_brian_sam-bodden.jpeg'
       }
     }
- },
+  },
   themeConfig: {
     // ...
     googleTagManager: {
       trackingID: 'GTM-W8Z6BLQ',
     },
-    prism : {
+    prism: {
       additionalLanguages: ['csharp', 'php', 'ruby', 'java', 'rust', 'elixir', 'groovy']
 
     },
@@ -208,17 +226,17 @@ module.exports = {
           ],
         },
       ],
-   copyright: `Copyright: © ${new Date().getFullYear()} Redis. All rights reserved. Redis and the cube logo are registered trademarks of Redis Ltd.`,
-   },
-     colorMode: {
+      copyright: `Copyright: © ${new Date().getFullYear()} Redis. All rights reserved. Redis and the cube logo are registered trademarks of Redis Ltd.`,
+    },
+    colorMode: {
       // Hides the switch in the navbar
       // Useful if you want to support a single color mode
       disableSwitch: false,
     },
     announcementBar: {
       id: 'redisconf20201cfp', // Any value that will identify this message.
-      content: '<p class="text"> Sign up to Redis Enterprise Cloud and use MATRIX200 to get $200 credits and a chance to win a Tesla </p> <a href="https://bit.ly/3ImXUEG" target="_blank" rel="noopener" class="btn">Click Here!</a>',
-    //  content: '<p class="text"></p> <a href="https://redislabs.com/redisconf/" target="_blank" rel="noopener" class="btn"></a>',
+      content: '<p class="text"> RedisDays Reg is open! Don’t miss our big announcements. </p> <a href="https://redis.com/redisdays/" target="_blank" rel="noopener" class="btn">Register Now</a>',
+      //  content: '<p class="text"></p> <a href="https://redislabs.com/redisconf/" target="_blank" rel="noopener" class="btn"></a>',
       backgroundColor: '#fff', // Defaults to `#fff`.
       textColor: '#000', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
@@ -234,7 +252,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateTime: true,
           editUrl:
-          'https://github.com/redis-developer/redis-developer/edit/master/',
+            'https://github.com/redis-developer/redis-developer/edit/master/',
         },
         blog: {
           showReadingTime: true,

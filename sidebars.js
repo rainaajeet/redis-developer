@@ -10,6 +10,7 @@ module.exports = {
       label: 'Create',
       items: [
         'create/index-create',
+        'create/redis-stack/index-redis-stack',
         'create/rediscloud/index-rediscloud',
           {
              type: 'category',
@@ -50,7 +51,15 @@ module.exports = {
               'create/aws/analytics-using-aws/index-analytics-using-aws'
             ]
           },
-        'create/docker/index-docker',
+        {
+           type: 'category',
+           label: 'Redis on Docker',
+           items: [
+               'create/docker/index-docker',
+               'create/docker/redis-on-docker/index-redis-on-docker',
+               'create/docker/nodejs-nginx-redis/index-nodejs-nginx-redis' 
+            ]
+          },
         {
           type: 'category',
           label: 'Redis on Kubernetes',
@@ -64,10 +73,46 @@ module.exports = {
         'create/windows/index-windows',
         'create/from-source/index-from-source',
         'create/jenkins/index-jenkins',
-        'create/openshift/index-openshift' 
-     ]
-    },
+        'create/openshift/index-openshift', 
+         {
+           type: 'category',
+           label: 'Redis using Netlify',
+           items: [
+             'create/netlify/getting-started-with-netlify/index-getting-started-with-netlify',
+             'create/netlify/deploy-docusaurus-to-netlify/index-deploy-docusaurus-to-netlify',
+              ]
+            },
+          {
+            type: 'category',
+           label: 'Redis using Vercel',
+           items: [
+             'create/vercel/index-vercel',
+           ]
+         },
+       {
+          type: 'category',
+          label: 'Redis using Cloud Run',
+          items: [
+            'create/cloudrun/index-cloudrun',
+          ]
+       },
+     {  
+       type: 'category',
+       label: 'Redis using Azure Functions',
+       items: [
+           'create/azurefunctions/index-azurefunctions',
+         ]
+      },
     {
+       type: 'category',
+       label: 'Redis using Portainer',
+       items: [
+            'create/portainer/index-portainer',
+         ]
+    },
+     ]
+   }, 
+ {
       type: 'category',
       label: 'Develop',
       items: [
@@ -248,52 +293,6 @@ module.exports = {
      ]
     },
     {
-     type: 'category',
-     label: 'Operate',
-     items: [
-      'operate/index-operate',
-     {
-       type: 'category',
-       label: 'Continuous Integration/Deployment',
-       items: [
-         'operate/ci-cd/index-ci-cd',
-         'operate/ci-cd/jenkins/index-jenkins'
-        ]
-      },
-      {
-       type: 'category',
-       label: 'Observability',
-       items: [
-        'operate/observability/index-observability',
-        'operate/observability/redisdatasource/index-redisdatasource',
-        'operate/observability/redisexplorer/index-redisexplorer',
-        'operate/observability/datadog/index-datadog',
-        'operate/observability/prometheus/index-prometheus',   
-        ]
-      },
-      { 
-        type: 'category',
-        label: 'Provisioning',
-        items: [
-          'operate/provisioning/index-provisioning',
-          'operate/provisioning/terraform/index-terraform',
-          'operate/provisioning/azure-cache-terraform/index-azure-cache-terraform',
-          'operate/provisioning/azure-cache-terraform-private/index-azure-cache-terraform-private',
-          ]
-       },
-      {
-        type: 'category',
-        label: 'Orchestration',
-        items: [
-          'operate/orchestration/index-orchestration',
-          'operate/orchestration/docker/index-docker',
-          'operate/orchestration/kubernetes/index-kubernetes',
-        ]
-       },
-      ]
-
-    },
-    {
       type: 'category',
       label: 'Explore',
       items: [
@@ -306,7 +305,10 @@ module.exports = {
           items: [
            'explore/redisinsightv2/index-redisinsightv2',
            'explore/redisinsightv2/getting-started/index-gettingstarted',
+           'explore/redisinsightv2/windows/index-windows',
            'explore/redisinsightv2/browser/index-browser',
+           'explore/redisinsightv2/profiler/index-profiler',
+           'explore/redisinsightv2/redisearch/index-redisearch',
           ]
          },
         {
@@ -329,20 +331,61 @@ module.exports = {
           'explore/redisinsight/usinghelm/index-usinghelm',
         ]
         },
-          {
-           type: 'category',
-           label: 'Netlify',
-           items: [
-            'explore/netlify/getting-started-with-netlify/index-getting-started-with-netlify',
-            'explore/netlify/deploy-redis-developersite-clone/index-deploy-redis-developersite-clone',
-              ]
-            },
           'explore/redisdatasource/index-redisdatasource',
           'explore/redisexplorer/index-redisexplorer',
           'explore/datadog/index-datadog',
           'explore/redismod/index-redismod',
           'explore/riot/index-riot',
      ]
+    },
+    {
+     type: 'category',
+     label: 'Operate',
+     items: [
+      'operate/index-operate',
+     {
+       type: 'category',
+       label: 'Continuous Integration/Deployment',
+       items: [
+         'operate/continuous-integration-continuous-deployment/index-continuous-integration-continuous-deployment',
+         'operate/continuous-integration-continuous-deployment/jenkins/index-jenkins',
+         'operate/continuous-integration-continuous-deployment/argocd/index-argocd', 
+       ]
+      },
+      {
+       type: 'category',
+       label: 'Observability',
+       items: [
+        'operate/observability/index-observability',
+        'operate/observability/redisdatasource/index-redisdatasource',
+        'operate/observability/redisexplorer/index-redisexplorer',
+        'operate/observability/datadog/index-datadog',
+        'operate/observability/prometheus/index-prometheus',
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Provisioning',
+        items: [
+          'operate/provisioning/index-provisioning',
+          'operate/provisioning/terraform/index-terraform',
+          'operate/provisioning/azure-cache-terraform/index-azure-cache-terraform',
+          'operate/provisioning/azure-cache-terraform-private/index-azure-cache-terraform-private',
+          ]
+       },
+      {
+        type: 'category',
+        label: 'Orchestration',
+        items: [
+          'operate/orchestration/index-orchestration',
+          'operate/orchestration/docker/index-docker',
+          'operate/orchestration/nodejs-nginx-redis/index-nodejs-nginx-redis',  
+          'operate/orchestration/kubernetes/index-kubernetes',
+          'operate/orchestration/kubernetes-operator/index-kubernetes-operator',
+    ]
+       },
+      ]
+
     },
     {
       type: 'category',
