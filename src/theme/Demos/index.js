@@ -21,12 +21,13 @@ function Demos() {
             <div className="terminal-body">
               <h5 className="title">Getting Started with Redis Stack</h5>
               <ul className="links">
-                <li><a href="/create/redis-stack/">Introduction to Redis Stack</a></li>
-                <li><a href="/explore/redisinsightv2/getting-started">Run RedisInsight using Redis Stack</a></li>
-                <li><a href="/create/rediscloud">Create database on Redis Enterprise Cloud using Redis Stack</a></li> 
-                <li><a href="/howtos/redisearch/">Search database using Redis Stack</a></li>
-                <li><a href="/howtos/redisgraph/">Graph database using Redis Stack</a></li>
-             </ul>
+                 <li><a href="/create/redis-stack/">Introduction to Redis Stack</a></li>
+                 <li><a href="/create/rediscloud">Create Redis Stack database on Redis Enterprise Cloud</a></li>
+                 <li><a href="/create/redisjson">Storing and querying JSON documents</a></li>
+                 <li><a href="/howtos/redisearch/">Full-text search</a></li>
+                 <li><a href="/howtos/redistimeseries/">Storing and Querying Time Series data</a></li>
+                 <li><a href="/howtos/redisbloom/">Probability data structure</a></li>
+               </ul>
             </div>
           </div>
 
